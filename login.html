@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login/Register</title>
+</head>
+<body>
+    <nav style="background-image: url('health.jpg');" class="bg-cover bg-no-repeat min-h-screen relative h-screen flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-lg shadow-lg">
+            <div class="p-6">
+              <h1 class="text-2xl font-bold text-center border-b pb-4 mb-6">Login</h1>
+              <form method="post">
+                <div class="relative mb-6">
+                  <input type="text" required class="peer w-full p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300">
+                  <label class="absolute left-0 top-1/2 text-gray-500 transform -translate-y-1/2 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-blue-500 peer-focus:text-sm">Username</label>
+                </div>
+                <div class="relative mb-6">
+                  <input type="password" required class="peer w-full p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500 transition duration-300">
+                  <label class="absolute left-0 top-1/2 text-gray-500 transform -translate-y-1/2 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-blue-500 peer-focus:text-sm">Password</label>
+                </div>
+                <div class="text-right text-gray-500 hover:underline cursor-pointer mb-6">
+                  Forgot Password?
+                </div>
+                <input type="submit" value="Login" class="w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600 transition duration-300">
+                <div class="text-center text-gray-500 mt-6">
+                  Not a member? <a href="#" class="text-blue-500 hover:underline">Signup</a>
+                </div>
+              </form>
+            </div>
+          </div>
+    </nav>
+</body>
+</html>

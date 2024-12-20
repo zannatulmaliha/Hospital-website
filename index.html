@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hospital</title>
+</head>
+<body>
+
+  <nav style="background-image: url('health.jpg');" class="bg-cover bg-no-repeat min-h-screen relative">
+    <header class="flex flex-col md:flex-row justify-between items-center px-10 py-8 bg-white bg-opacity-60 shadow-md fixed top-0 left-0 right-0 z-20">
+        
+        <div class="flex items-center space-x-1 font-bold text-3xl mb-4 md:mb-0">
+            <h3 class="text-blue-500">Health</h3>
+            <h3 class="text-orange-500">Care</h3>  
+        </div>
+
+        <div>
+            <ul class="flex space-x-8 text-lg font-semibold">
+                <li class="hover:text-blue-500 cursor-pointer">Home</li>
+                <li class="hover:text-blue-500 cursor-pointer">About Us</li>
+                <li class="hover:text-blue-500 cursor-pointer">Services</li>
+                <li class="hover:text-blue-500 cursor-pointer">Pages</li>
+                <li class="hover:text-blue-500 cursor-pointer">Blog</li>
+            </ul>
+        </div>
+
+        <div class="mt-4 md:mt-0">
+            <button class="bg-green-500 text-black font-bold px-4 py-2 rounded-md hover:bg-green-600">
+                <a href="login.html">Login/Register</a>
+            </button>
+        </div>
+    </header>
+ 
+
+    <main class="relative flex flex-col md:flex-row space-x-5  p-10 items-center justify-between mr-10 ml-auto min-h-screen pt-32 ">
+
+        <div class="p-10 ml-20 text-center text-white bg-black  bg-opacity-50 rounded-lg max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-5">Welcome to Our Hospital</h1>
+            <p class="text-xl mb-5">We provide top-notch healthcare services for you and your family.</p>
+            <p class="text-lg">Whether you're here for a routine checkup or specialized treatment, your well-being is our priority. Let's get you started on your journey to health!</p>
+            <p class="text-lg">Book an appointment with our specialists today!</p>
+        </div>
+
+        <div class="p-10 bg-white bg-opacity-70 rounded-lg shadow-md max-w-lg w-full">
+            <h1 class="text-2xl font-bold mb-5 text-center text-gray-800">Book an Appointment</h1>
+            <form class="space-y-5">
+                <input type="text" placeholder="First Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="text" placeholder="Last Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="text" placeholder="Phone Number" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>ENT</option>
+                    <option>Gastroenterology</option>
+                    <option>Dental</option>
+                    <option>Cardiology</option>
+                </select>
+                <textarea placeholder="Describe your issue" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                <input type="datetime-local" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button type="submit" class="w-full bg-pink-600 text-white font-bold px-4 py-2 rounded-md hover:bg-pink-700">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    </nav>
+
+ 
+        <div class="mt-10 ml-7">
+            <h2 class="font-bold text-3xl mb-5">Our Special Service</h2>
+            <div class="flex justify-between">
+            <p class="text-xl">Beyond simply providing medical care, our commitment lies in delivering unparalled services tailored to your unique needs</p>
+            <button class="bg-orange-500 font-bold px-4 py-2 rounded-md mb-5 mr-10 text-white text-lg">Ask A Service</button>
+            </div>
+        <div>
+    
+            <div class="flex flex-col md:flex-row md:space-x-10 justify-center">
+                <div class="space-y-5 shadow-lg rounded-sm cursor-pointer box-border text-center p-2 w-full md:w-1/3 max-w-sm mx-auto md:mx-0">
+                    <img src="lab.jpg" class="rounded-full w-20 h-20 mx-auto">
+                    <h3 class="font-semibold text-lg">Laboratory Test</h3>
+                    <p>
+                        Accurate Diagnostics, Swift Results: Experience top-notch Laboratory
+                        Testing at our facility.
+                    </p>
+                    <a href="#" class="text-green-600">Learn More</a>
+                </div>
+                <div class="space-y-5 shadow-lg rounded-sm cursor-pointer box-border text-center p-2 w-full md:w-1/3 max-w-sm mx-auto md:mx-0">
+                    <img src="health.png" class="rounded-full w-20 h-20 mx-auto">
+                    <h3 class="font-semibold text-lg">Health Check</h3>
+                    <p>
+                        Our thorough assessments and expert evaluations help you stay proactive about your health.
+                    </p>
+                    <a href="#" class="text-green-600">Learn More</a> 
+                </div>
+                <div class="space-y-5 shadow-lg rounded-sm cursor-pointer box-border text-center p-2 w-full md:w-1/3 max-w-sm mx-auto md:mx-0">
+                    <img src="dentist.png" class="rounded-full w-20 h-20 mx-auto">
+                    <h3 class="font-semibold text-lg">General Dentistry</h3>    
+                    <p>
+                        Experience comprehensive oral care with Dentistry. Trust us to keep your smile healthy and bright.
+                    </p>
+                    <a href="#" class="text-green-600">Learn More</a>
+                </div>
+            </div>
+            
+
+
+    
+</body>
+</html>
